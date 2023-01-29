@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <style>
+      .youtube-button {
+        background-color: red;
+        color: white;
+        padding: 14px 20px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .youtube-button:hover {
+        background-color: darkred;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Best Video of All Times!</h1>
+    <button class="youtube-button">Watch Video</button>
+    <script>
+      const button = document.querySelector(".youtube-button");
+      button.addEventListener("click", function() {
+        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+      });
+    </script>
+  </body>
+</html>
